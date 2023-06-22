@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  /* --background: #d6d6d6; */
+  --background: #f5f5f5;
+  --text: #515151;
+  --text-alt: #694a38;
+  --link: #f4ac45;
+  --button-bg: #373737;
+  --button-link-hover: #000;
+}
+
+body {
+  background-color: var(--background);
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: 1.6rem;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Common */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin: 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: var(--text);
+}
+
+.line {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background-color: #7d7789;
+}
+
+.photo {
+  border: 3px solid #000;
+  border-radius: 50%;
+  image-rendering: crisp-edges;
+  max-width: 25rem;
+}
+
+/* Navbar */
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+
+#username {
+  font-size: 2rem;
+  font-weight: bold;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-alt);
+}
+
+#menuList {
+  list-style: none;
+  display: inline-flex;
+  gap: 2rem;
+}
+
+#menuLink {
+  font-weight: bold;
+  color: var(--text-alt);
+  position: relative;
+  padding: 10px 0;
+}
+
+#menuLink:hover {
+  /* background-color: var(--button-bg); */
+  color: var(--button-link-hover);
+}
+
+#menuLink::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  transition: all 0.3s cubic-bezier(0.1, 0.8, 0.3, 1.2);
+  visibility: hidden;
+  transform: scaleX(0);
+}
+
+#menuLink:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* Inicio */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* Projetos */
+
+/* Contato */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contactList {
+  padding-left: 2.6rem;
+}
+
+#contactItem {
+  color: var(--text);
+}
+
+#contactItem a {
+  color: var(--text-alt);
+  font-weight: 500;
+}
