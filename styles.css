@@ -102,19 +102,19 @@ section {
   gap: 2rem;
 }
 
-#menuLink {
+.menuLink {
   font-weight: bold;
   color: var(--text-alt);
   position: relative;
   padding: 10px 0;
 }
 
-#menuLink:hover {
+.menuLink:hover {
   /* background-color: var(--button-bg); */
   color: var(--button-link-hover);
 }
 
-#menuLink::after {
+.menuLink::after {
   content: '';
   position: absolute;
   height: 1px;
@@ -127,7 +127,7 @@ section {
   transform: scaleX(0);
 }
 
-#menuLink:hover::after {
+.menuLink:hover::after {
   visibility: visible;
   transform: scaleX(1);
 }
@@ -159,6 +159,10 @@ section {
   text-decoration: none;
   color: var(--text-alt);
   font-size: 3rem;
+}
+
+.iconLink:hover {
+  color: var(--button-link-hover);
 }
 
 /* Inicio */
