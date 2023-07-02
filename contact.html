@@ -26,12 +26,41 @@
 
   <body>
     <nav id="menu">
-      <a id="username" href="index.html">Lucas Emanuel</a>
+      <a id="username" href="index.html">Lucas</a>
       <ul id="menuList">
         <li><a class="menuLink" href="index.html">Inicio</a></li>
         <li><a class="menuLink" href="projects.html">Projetos</a></li>
         <li><a class="menuLink" href="contact.html">Contato</a></li>
       </ul>
+
+      <input type="checkbox" id="overlayButton" name="overlayButton" />
+      <label for="overlayButton">
+        <i class="bi bi-list" id="openOverlay"></i>
+        <i class="bi bi-x" id="closeOverlay"></i>
+      </label>
+
+      <div id="overlay">
+        <div id="overlayContent">
+          <a id="username" href="index.html">Lucas</a>
+          <ul id="overlayMenuList">
+            <li><a class="menuLink" href="index.html">Inicio</a></li>
+            <li><a class="menuLink" href="projects.html">Projetos</a></li>
+            <li><a class="menuLink" href="contact.html">Contato</a></li>
+          </ul>
+          <div id="iconsContainer">
+            <a class="iconLink" href="https://github.com/Lucas8x">
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              class="iconLink"
+              href="https://www.linkedin.com/in/lucasemanuel8x/"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          <span id="thanksMessage">Obrigado pela visita :D</span>
+        </div>
+      </div>
     </nav>
 
     <main id="contact">
