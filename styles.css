@@ -63,6 +63,7 @@ main {
 .sectionHeader {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .title {
@@ -285,13 +286,55 @@ input#overlayButton:checked ~ #overlay {
 }
 
 /* Projetos */
-#projects {
+#projectsPage {
   display: flex;
-  justify-content: center;
-  /* temp */
-  gap: 1rem;
-  font-size: 2rem;
-  color: var(--text-alt);
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 3rem;
+  overflow-y: scroll;
+}
+
+#projectsPageContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 85rem;
+  width: 100%;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.6rem;
+}
+
+.projectsByTypeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.projectTypeTitle {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-left: 3rem;
+}
+
+.projectItem {
+  color: var(--text);
+}
+
+.projectItem a {
+  font-weight: 500;
+  color: var(--highlight);
 }
 
 /* Contato */
@@ -313,8 +356,8 @@ input#overlayButton:checked ~ #overlay {
 }
 
 #contactItem a {
-  color: var(--text-alt);
   font-weight: 500;
+  color: var(--highlight);
 }
 
 /* Media Queries */
