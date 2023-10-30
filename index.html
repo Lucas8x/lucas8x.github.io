@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Lucas Emanuel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,71 +19,9 @@
       name="keywords"
       content="Frontend, Developer, Javascript, Typescript, React"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-    <script src="main.js"></script>
   </head>
-
   <body>
-    <nav id="menu">
-      <a id="username" href="index.html">Lucas</a>
-      <ul id="menuList">
-        <li><a class="menuLink" href="index.html">Inicio</a></li>
-        <li><a class="menuLink" href="projects.html">Projetos</a></li>
-        <li><a class="menuLink" href="contact.html">Contato</a></li>
-      </ul>
-
-      <input type="checkbox" id="overlayButton" name="overlayButton" />
-      <label for="overlayButton">
-        <i class="bi bi-list" id="openOverlay"></i>
-        <i class="bi bi-x" id="closeOverlay"></i>
-      </label>
-
-      <div id="overlay">
-        <div id="overlayContent">
-          <a id="username" href="index.html">Lucas</a>
-          <ul id="overlayMenuList">
-            <li><a class="menuLink" href="index.html">Inicio</a></li>
-            <li><a class="menuLink" href="projects.html">Projetos</a></li>
-            <li><a class="menuLink" href="contact.html">Contato</a></li>
-          </ul>
-          <div id="iconsContainer">
-            <a class="iconLink" href="https://github.com/Lucas8x">
-              <i class="bi bi-github"></i>
-            </a>
-            <a
-              class="iconLink"
-              href="https://www.linkedin.com/in/lucasemanuel8x/"
-            >
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-          <span id="thanksMessage">Obrigado pela visita :D</span>
-        </div>
-      </div>
-    </nav>
-
-    <main id="home">
-      <!-- <img class="photo" src="https://picsum.photos/200" /> -->
-      <div id="homeContent">
-        <span id="welcomeim">Bem vindo, eu sou</span>
-        <h3 id="myname">Lucas Emanuel.</h3>
-        <h3 id="role">Desenvolvedor frontend</h3>
-        <span id="about"
-          >Sou um desenvolver frontend atualmente morando no Brasil.</span
-        >
-      </div>
-    </main>
-
-    <footer id="footer">
-      <span id="thanksMessage">Obrigado pela visita :D</span>
-      <div id="iconsContainer">
-        <a class="iconLink" href="https://github.com/Lucas8x">
-          <i class="bi bi-github"></i>
-        </a>
-        <a class="iconLink" href="https://www.linkedin.com/in/lucasemanuel8x/">
-          <i class="bi bi-linkedin"></i>
-        </a>
-      </div>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
