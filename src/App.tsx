@@ -7,11 +7,11 @@ import { Footer } from './components/footer';
 export default function App() {
   return (
     <HashRouter>
-      <div className="flex h-screen flex-col justify-between">
+      <main className="flex h-screen flex-col justify-between">
         <Navbar />
         <Routes />
         <Footer />
-      </div>
+      </main>
     </HashRouter>
   );
 }
