@@ -2,28 +2,15 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { BsList, BsX } from 'react-icons/bs';
 
+import { NAVBAR_LINKS } from '../constants';
+
 import { NavbarItem } from './navbarItem';
 import { SocialIconsLink } from './socialIcons';
-
-const links = [
-  {
-    text: 'Inicio',
-    path: '/',
-  },
-  {
-    text: 'Projetos',
-    path: 'projects',
-  },
-  {
-    text: 'Contato',
-    path: 'contact',
-  },
-];
 
 export function Navbar() {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false);
 
-  const renderedLinks = links.map((i) => (
+  const renderedLinks = NAVBAR_LINKS.map((i) => (
     <NavbarItem
       key={i.path}
       href={i.path}
