@@ -15,7 +15,7 @@ export function Projects() {
           Aqui estão alguns projetos pessoais que desenvolvi
         </SectionSubtitle>
 
-        <div className="flex w-full flex-col gap-4">
+        <div className="flex w-full flex-col gap-4 pb-7">
           <Project.Group title="Ferramentas para jogos">
             <Project.Item
               title="Ragnarok MVP Timer"
