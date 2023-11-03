@@ -21,9 +21,9 @@ export function Navbar() {
   ));
 
   return (
-    <nav className="flex items-center justify-between px-5 py-5 shadow-md md:px-10 md:py-5">
+    <nav className="flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md md:px-10 md:py-5">
       <Link
-        className="whitespace-nowrap text-xl font-bold uppercase text-stone-600 no-underline"
+        className="whitespace-nowrap  text-xl font-bold uppercase text-stone-600 no-underline"
         to="/"
       >
         Lucas
