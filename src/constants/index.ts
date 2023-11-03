@@ -12,3 +12,14 @@ export const NAVBAR_LINKS = [
     path: 'contact',
   },
 ];
+
+export const TECH_ICONS = [
+  'html',
+  'css',
+  'js',
+  'ts',
+  'react',
+  'tailwind',
+  'sass',
+  'styledcomponents',
+];
