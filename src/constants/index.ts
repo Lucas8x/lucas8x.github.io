@@ -14,12 +14,12 @@ export const NAVBAR_LINKS = [
 ];
 
 export const TECH_ICONS = [
-  'html',
-  'css',
-  'js',
-  'ts',
-  'react',
-  'tailwind',
-  'sass',
-  'styledcomponents',
+  { id: 'html', text: 'HTML' },
+  { id: 'css', text: 'CSS' },
+  { id: 'js', text: 'JavaScript' },
+  { id: 'ts', text: 'TypeScript' },
+  { id: 'react', text: 'React' },
+  { id: 'tailwind', text: 'Tailwind CSS' },
+  { id: 'sass', text: 'SASS' },
+  { id: 'styledcomponents', text: 'Styled Components' },
 ];
