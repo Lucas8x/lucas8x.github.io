@@ -7,7 +7,7 @@ import { Footer } from './components/footer';
 export default function App() {
   return (
     <HashRouter>
-      <main className="flex h-screen flex-col justify-between">
+      <main className="flex h-screen flex-col justify-between dark:bg-gray-900">
         <Navbar />
         <Routes />
         <Footer />

@@ -25,7 +25,7 @@ export function Projects() {
                   Site para auxiliar o usuário no registro e monitoração das
                   próximas aparições dos monstros chefes do jogo.{' '}
                   <a
-                    className="font-medium text-rose-800"
+                    className="font-medium text-rose-800 dark:text-cyan-500"
                     href="https://ragnarok-mvp-timer.com"
                     target="_blank"
                     rel="noreferrer"
@@ -45,7 +45,7 @@ export function Projects() {
                   moeda do jogo ou dinheiro real comprando ou vendendo um
                   determinado item do jogo.{' '}
                   <a
-                    className="font-medium text-rose-800"
+                    className="font-medium text-rose-800 dark:text-cyan-500"
                     href="https://ragnarok-ticket-calculator.vercel.app"
                     target="_blank"
                     rel="noreferrer"
@@ -64,7 +64,7 @@ export function Projects() {
                   {`Site para auxiliar na criação de um servidor de Don't Starve
                   Together. `}
                   <a
-                    className="font-medium text-rose-800"
+                    className="font-medium text-rose-800 dark:text-cyan-500"
                     href="https://lucas8x.github.io/dont-starve-together-server-setup/"
                     target="_blank"
                     rel="noreferrer"

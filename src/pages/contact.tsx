@@ -14,11 +14,11 @@ export function Contact() {
           Você pode usar esses meios para entrar em contato comigo:
         </SectionSubtitle>
 
-        <ul className="list-disc pl-6 text-neutral-600">
+        <ul className="list-disc pl-6 text-neutral-600 dark:text-white">
           <li>
             Email:{' '}
             <a
-              className="font-medium text-rose-800"
+              className="font-medium text-rose-800 dark:text-cyan-500"
               href="mailto:lucasemanuel8x@gmail.com"
             >
               lucasemanuel8x@gmail.com
@@ -27,7 +27,7 @@ export function Contact() {
 
           <li>
             <a
-              className="font-medium text-rose-800"
+              className="font-medium text-rose-800 dark:text-cyan-500"
               href="https://www.linkedin.com/in/lucasemanuel8x/"
             >
               Linkedin
