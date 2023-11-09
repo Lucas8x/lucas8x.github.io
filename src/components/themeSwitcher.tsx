@@ -6,7 +6,7 @@ export function ThemeSwitcher() {
 
   return (
     <button
-      className="text-2xl text-stone-600 hover:text-black dark:text-white dark:hover:text-stone-400"
+      className="text-2xl text-stone-600 hover:text-black dark:text-white dark:hover:text-cyan-500"
       onClick={toggleTheme}
     >
       {theme === 'dark' ? <BsFillMoonStarsFill /> : <BsSunFill />}
