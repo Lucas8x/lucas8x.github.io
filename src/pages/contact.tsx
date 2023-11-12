@@ -1,5 +1,8 @@
+import { BsLinkedin, BsEnvelopeFill, BsGeoAltFill } from 'react-icons/bs';
+
 import { SectionHeader } from '../components/sectionHeader';
 import { SectionSubtitle } from '../components/sectionSubtitle';
+import { InfoCard } from '../components/infoCard';
 
 export function Contact() {
   return (
@@ -14,26 +17,25 @@ export function Contact() {
           Você pode usar esses meios para entrar em contato comigo:
         </SectionSubtitle>
 
-        <ul className="list-disc pl-6 text-neutral-600 dark:text-white">
-          <li>
-            Email:{' '}
-            <a
-              className="font-medium text-rose-800 dark:text-cyan-500"
-              href="mailto:lucasemanuel8x@gmail.com"
-            >
-              lucasemanuel8x@gmail.com
-            </a>
-          </li>
+        <InfoCard
+          Icon={BsLinkedin}
+          title="Linkedin"
+          value="lucasemanuel8x"
+          href="https://www.linkedin.com/in/lucasemanuel8x/"
+        />
 
-          <li>
-            <a
-              className="font-medium text-rose-800 dark:text-cyan-500"
-              href="https://www.linkedin.com/in/lucasemanuel8x/"
-            >
-              Linkedin
-            </a>
-          </li>
-        </ul>
+        <InfoCard
+          Icon={BsEnvelopeFill}
+          title="Envie-me um email"
+          value="lucasemanuel8x@gmail.com"
+          href="mailto:lucasemanuel8x@gmail.com"
+        />
+
+        <InfoCard
+          Icon={BsGeoAltFill}
+          title="Localização"
+          value="Brazil - Alagoas, Maceió"
+        />
       </section>
     </main>
   );
