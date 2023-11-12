@@ -1,6 +1,8 @@
 import Project from '../components/project';
 import { SectionHeader } from '../components/sectionHeader';
 import { SectionSubtitle } from '../components/sectionSubtitle';
+import { ProjectCard } from '../components/projectCard';
+import { PROJECTS } from '../constants';
 
 export function Projects() {
   return (
@@ -15,124 +17,65 @@ export function Projects() {
           Aqui estão alguns projetos pessoais que desenvolvi
         </SectionSubtitle>
 
+        {PROJECTS.map((i) => (
+          <ProjectCard
+            key={i.title}
+            image={i.image}
+            title={i.title}
+            description={i.description}
+            techs={i.techs}
+            liveURL={i.liveURL}
+            repoURL={i.repoURL}
+          />
+        ))}
+
         <div className="flex w-full flex-col gap-4 pb-7">
-          <Project.Group title="Ferramentas para jogos">
-            <Project.Item
-              title="Ragnarok MVP Timer"
-              href="https://github.com/RagnarokMvpTimer/frontend"
-              description={
-                <>
-                  Site para auxiliar o usuário no registro e monitoração das
-                  próximas aparições dos monstros chefes do jogo.{' '}
-                  <a
-                    className="font-medium text-rose-800 dark:text-cyan-500"
-                    href="https://ragnarok-mvp-timer.com"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Clique aqui para visitar
-                  </a>
-                </>
-              }
-            />
-
-            <Project.Item
-              title="Ragnarok Ticket Calculator"
-              href="https://github.com/Lucas8x/ragnarok-ticket-calculator"
-              description={
-                <>
-                  Site para calcular quanto o usuário irá ganhar ou gastar em
-                  moeda do jogo ou dinheiro real comprando ou vendendo um
-                  determinado item do jogo.{' '}
-                  <a
-                    className="font-medium text-rose-800 dark:text-cyan-500"
-                    href="https://ragnarok-ticket-calculator.vercel.app"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Clique aqui para visitar
-                  </a>
-                </>
-              }
-            />
-
-            <Project.Item
-              title="Dont Starve Together Server Setup"
-              href="https://github.com/Lucas8x/dont-starve-together-server-setup"
-              description={
-                <>
-                  {`Site para auxiliar na criação de um servidor de Don't Starve
-                  Together. `}
-                  <a
-                    className="font-medium text-rose-800 dark:text-cyan-500"
-                    href="https://lucas8x.github.io/dont-starve-together-server-setup/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Clique aqui para visitar
-                  </a>
-                </>
-              }
-            />
-          </Project.Group>
-
-          <Project.Group title="BOTs">
-            <Project.Item
-              title="Stopots bot"
-              href="https://github.com/Lucas8x/stopots-bot"
-              description="BOT para jogar StopotS, um jogo de adedonha online."
-            />
-          </Project.Group>
-
-          <Project.Group title="Rede Social">
-            <Project.Item
-              title="Voran"
-              href="https://github.com/Lucas8x/proj-mobile"
-              description="Aplicativo móvel de rede social onde usuários podem enviar, visualizar, comentar fotos."
-            />
-          </Project.Group>
-
-          <Project.Group title="Desktop">
-            <Project.Item
-              title="Photo Organizer"
-              href="https://github.com/Lucas8x/photo-organizer"
-              description="Aplicativo que mostra as fotos de uma pasta e com botões
-              configurados pelo usuário pode copiar ou mover essas fotos para
-              pastas diferentes vinculados a cada botão."
-            />
-          </Project.Group>
+          <SectionHeader>Outros</SectionHeader>
 
           <Project.Group title="Jogos">
-            <Project.Item
-              title="Pong Game Multiplayer"
-              href="https://github.com/Lucas8x/pong-game-multiplayer"
-              description="Jogo multiplayer online de Pong."
-            />
             <Project.Item
               title="Maze Game"
               href="https://github.com/Lucas8x/Maze-Game"
               description="Jogo de labirinto no terminal."
             />
+            <Project.Item
+              title="Vortex Store"
+              href="https://github.com/Lucas8x/vortex-store"
+              description="Loja fictícia de venda de jogos online."
+            />
           </Project.Group>
-
           <Project.Group title="CLI">
+            <Project.Item
+              title="MVP Scraper CLI"
+              href="https://github.com/Lucas8x/mvp-scraper-cli"
+              description="Interface javascript para buscar e baixar informações e fotos de uma API sobre os monstros do jogo Ragnarok."
+            />
             <Project.Item
               title="Luscious Downloader"
               href="https://github.com/Lucas8x/luscious-downloader"
               description="Era uma CLI onde usuário poderia procurar/baixar diversos albums de imagens/gifs."
             />
           </Project.Group>
-
           <Project.Group title="Outros">
+            <Project.Item
+              title="Payroll"
+              href="https://github.com/Lucas8x/payroll"
+              description="Sistema para gerenciar funcionários/cargos da empresa."
+            />
             <Project.Item
               title="MVP Scraper"
               href="https://github.com/RagnarokMvpTimer/mvp-scraper"
-              description="Script para buscar e baixar informações e fotos de uma API sobre os monstros do jogo Ragnarok."
+              description="Script python para buscar e baixar informações e fotos de uma API sobre os monstros do jogo Ragnarok."
             />
             <Project.Item
               title="MAL Plain List"
               href="https://github.com/Lucas8x/mal-plain-list"
               description="Script para extrair a lista do usuário do site MyAnimeList e converte-la em um arquivo de texto."
+            />
+            <Project.Item
+              title="Insomnia pink theme"
+              href="https://github.com/Lucas8x/insomnia-plugin-pink-theme"
+              description="Tema rosa para o insomnia."
             />
           </Project.Group>
         </div>
